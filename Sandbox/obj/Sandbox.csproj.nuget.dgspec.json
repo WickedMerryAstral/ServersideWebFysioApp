@@ -1,0 +1,251 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\dev\\ServerSideWebDevFysio\\FysioWebAppFull\\Sandbox\\Sandbox.csproj": {}
+  },
+  "projects": {
+    "D:\\dev\\ServerSideWebDevFysio\\Core.DomainServices\\Core.DomainServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\ServerSideWebDevFysio\\Core.DomainServices\\Core.DomainServices.csproj",
+        "projectName": "Core.DomainServices",
+        "projectPath": "D:\\dev\\ServerSideWebDevFysio\\Core.DomainServices\\Core.DomainServices.csproj",
+        "packagesPath": "C:\\Users\\Evelynn\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\ServerSideWebDevFysio\\Core.DomainServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Evelynn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\dev\\ServerSideWebDevFysio\\Core.Domain\\Core.Domain.csproj": {
+                "projectPath": "D:\\dev\\ServerSideWebDevFysio\\Core.Domain\\Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\dev\\ServerSideWebDevFysio\\Core.Domain\\Core.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\ServerSideWebDevFysio\\Core.Domain\\Core.Domain.csproj",
+        "projectName": "Core.Domain",
+        "projectPath": "D:\\dev\\ServerSideWebDevFysio\\Core.Domain\\Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\Evelynn\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\ServerSideWebDevFysio\\Core.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Evelynn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\dev\\ServerSideWebDevFysio\\FysioWebAppFull\\Infrastructure.EF.Fysio\\Infrastructure.EF.Fysio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\ServerSideWebDevFysio\\FysioWebAppFull\\Infrastructure.EF.Fysio\\Infrastructure.EF.Fysio.csproj",
+        "projectName": "Infrastructure.EF.Fysio",
+        "projectPath": "D:\\dev\\ServerSideWebDevFysio\\FysioWebAppFull\\Infrastructure.EF.Fysio\\Infrastructure.EF.Fysio.csproj",
+        "packagesPath": "C:\\Users\\Evelynn\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\ServerSideWebDevFysio\\FysioWebAppFull\\Infrastructure.EF.Fysio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Evelynn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\dev\\ServerSideWebDevFysio\\Core.DomainServices\\Core.DomainServices.csproj": {
+                "projectPath": "D:\\dev\\ServerSideWebDevFysio\\Core.DomainServices\\Core.DomainServices.csproj"
+              },
+              "D:\\dev\\ServerSideWebDevFysio\\Core.Domain\\Core.Domain.csproj": {
+                "projectPath": "D:\\dev\\ServerSideWebDevFysio\\Core.Domain\\Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\dev\\ServerSideWebDevFysio\\FysioWebAppFull\\Sandbox\\Sandbox.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev\\ServerSideWebDevFysio\\FysioWebAppFull\\Sandbox\\Sandbox.csproj",
+        "projectName": "Sandbox",
+        "projectPath": "D:\\dev\\ServerSideWebDevFysio\\FysioWebAppFull\\Sandbox\\Sandbox.csproj",
+        "packagesPath": "C:\\Users\\Evelynn\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\ServerSideWebDevFysio\\FysioWebAppFull\\Sandbox\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Evelynn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\dev\\ServerSideWebDevFysio\\Core.DomainServices\\Core.DomainServices.csproj": {
+                "projectPath": "D:\\dev\\ServerSideWebDevFysio\\Core.DomainServices\\Core.DomainServices.csproj"
+              },
+              "D:\\dev\\ServerSideWebDevFysio\\Core.Domain\\Core.Domain.csproj": {
+                "projectPath": "D:\\dev\\ServerSideWebDevFysio\\Core.Domain\\Core.Domain.csproj"
+              },
+              "D:\\dev\\ServerSideWebDevFysio\\FysioWebAppFull\\Infrastructure.EF.Fysio\\Infrastructure.EF.Fysio.csproj": {
+                "projectPath": "D:\\dev\\ServerSideWebDevFysio\\FysioWebAppFull\\Infrastructure.EF.Fysio\\Infrastructure.EF.Fysio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

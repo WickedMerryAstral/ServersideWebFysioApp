@@ -1,0 +1,108 @@
+﻿@model FysioWebPortal.ViewModels.PractitionerFileViewViewModel
+
+@{
+    ViewData["Title"] = "Patient File";
+}
+@*
+    Patient data
+    Treatment info
+    Appointments of this patient
+    Comments for this file
+*@
+
+<div>
+    <form asp-action="PractitionerPatientFile">
+        <div class="form-group">
+            <label asp-for="patient.name">Name</label>
+            <input class="form-control" asp-for="patient.name" />
+            <span asp-validation-for="patient.name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.email">Email</label>
+            <input class="form-control" asp-for="patient.email" />
+            <span asp-validation-for="patient.email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.phone">Phone</label>
+            <input class="form-control" asp-for="patient.phone" />
+            <span asp-validation-for="patient.phone" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.sex">Sex</label>
+            <input class="form-control" asp-for="patient.sex" />
+            <span asp-validation-for="patient.sex" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.patientFile.intakeBy">Intake done by</label>
+            <input readonly="readonly" class="form-control" asp-for="patient.patientFile.intakeBy" />
+        </div>
+        <div class="form-group">
+            <label asp-for="patient.patientFile.intakeSupervisedBy">Supervised by</label>
+            <input readonly="readonly" class="form-control" asp-for="patient.patientFile.intakeSupervisedBy" />
+        </div>
+
+        @* Implement main practitioner selector *@
+
+        <div class="form-group">
+            <label asp-for="patient.patientFile.IntakeDate">Intake date</label>
+            <input class="form-control" asp-for="patient.patientFile.IntakeDate" />
+            <span asp-validation-for="patient.patientFile.IntakeDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="patient.patientFile.DischargeDate">Discharge date</label>
+            <input class="form-control" asp-for="patient.patientFile.DischargeDate" />
+            <span asp-validation-for="patient.patientFile.DischargeDate" class="text-danger"></span>
+        </div>
+
+        <label>Treatment Plan</label>
+
+        @* Implement treatment selector *@
+
+        <div class="form-group">
+            <label asp-for="patient.patientFile.treatmentPlan.weeklyAppointments">Sessions per week</label>
+            <input class="form-control" asp-for="patient.patientFile.treatmentPlan.weeklyAppointments" />
+            <span asp-validation-for="patient.patientFile.treatmentPlan.weeklyAppointments" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="patient.patientFile.treatmentPlan.sessionDuration">Sessions duration</label>
+            <input class="form-control" asp-for="patient.patientFile.treatmentPlan.sessionDuration" />
+            <span asp-validation-for="patient.patientFile.treatmentPlan.sessionDuration" class="text-danger"></span>
+        </div>
+
+        @* Save button *@
+    </form>
+</div>
+<div>
+    <label>Appointments</label>
+    <div>
+        <div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Datum</th>
+                        <th>Sessie duur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var appointment in Model.patientAppointments)
+                    {
+                    <tr onclick="location.href = '@Url.Action("PractitionerEditAppointment", "Practitioner", appointment)'">
+                        <td>@Html.DisplayFor(modelItem => appointment.appointmentId)</td>
+                        <td>@Html.DisplayFor(modelItem => appointment.startTime)</td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <button class="btn" onclick="location.href = '@Url.Action("PractitionerCreateAppointment", "Practitioner", Model.patient)'">New Appointment</button>
+</div>
+<div>
+    <label>Comments</label>
+</div>
+

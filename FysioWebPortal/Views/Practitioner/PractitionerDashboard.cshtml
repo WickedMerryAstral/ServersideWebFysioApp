@@ -1,0 +1,62 @@
+﻿@model FysioWebPortal.ViewModels.PractitionerDashboardViewModel
+
+@{
+    ViewData["Title"] = "Practitioner Dashboard";
+}
+
+<div class="form-group">
+    <div class="row">
+        <label>My patients</label>
+    </div>
+    <div>
+        <div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Patient Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var patient in Model.patientlist)
+                    {
+                        <tr onclick="location.href = '@Url.Action("PractitionerPatientFile", "Practitioner", patient)'">
+                            <td>@Html.DisplayFor(modelItem => patient.name)</td>
+                            <td>@Html.DisplayFor(modelItem => patient.patientId)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <button type="button" onclick="location.href='@Url.Action("PractitionerIntakePatient","Practitioner")'">Register Patient</button>
+</div>
+
+<div class="form-group">
+    <div class="row">
+        <label>Today's Appointments</label>
+    </div>
+    <div>
+        <div class="table table-hover">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Patient</th>
+                        <th>Treatment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var appointment in Model.todaysAppointments)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => appointment.startTime)</td>
+                            <td>@Html.DisplayFor(modelItem => appointment.patient.name)</td>
+                            <td>@Html.DisplayFor(modelItem => appointment.treatment.description)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

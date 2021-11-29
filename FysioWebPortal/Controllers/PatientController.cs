@@ -1,0 +1,17 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using FysioWebPortal.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace FysioWebPortal.Controllers
+{
+    public class PatientController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+    }
+}

@@ -1,0 +1,17 @@
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\bin\Debug\net5.0\Infrastructure.API.Fysio.deps.json
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\bin\Debug\net5.0\Infrastructure.API.Fysio.dll
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\bin\Debug\net5.0\ref\Infrastructure.API.Fysio.dll
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\bin\Debug\net5.0\Infrastructure.API.Fysio.pdb
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\bin\Debug\net5.0\Core.Domain.dll
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\bin\Debug\net5.0\Core.DomainServices.dll
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\bin\Debug\net5.0\Core.DomainServices.pdb
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\bin\Debug\net5.0\Core.Domain.pdb
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\obj\Debug\net5.0\Infrastructure.API.Fysio.csproj.AssemblyReference.cache
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\obj\Debug\net5.0\Infrastructure.API.Fysio.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\obj\Debug\net5.0\Infrastructure.API.Fysio.AssemblyInfoInputs.cache
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\obj\Debug\net5.0\Infrastructure.API.Fysio.AssemblyInfo.cs
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\obj\Debug\net5.0\Infrastructure.API.Fysio.csproj.CoreCompileInputs.cache
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\obj\Debug\net5.0\Infrastructure.API.Fysio.csproj.CopyComplete
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\obj\Debug\net5.0\Infrastructure.API.Fysio.dll
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\obj\Debug\net5.0\ref\Infrastructure.API.Fysio.dll
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\Infrastructure.API.Fysio\obj\Debug\net5.0\Infrastructure.API.Fysio.pdb

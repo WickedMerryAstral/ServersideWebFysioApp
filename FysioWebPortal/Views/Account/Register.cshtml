@@ -1,0 +1,30 @@
+﻿@model FysioWebPortal.ViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div>
+    <form asp-action="Register">
+        <div class="form-group">
+            <label asp-for="newUser.email">Email</label>
+            <input class="form-control" asp-for="newUser.email" />
+            <span asp-validation-for="newUser.email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="newUser.password">Password</label>
+            <input class="form-control" asp-for="newUser.password" />
+            <span asp-validation-for="newUser.password" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label>Student, teacher, or employee?</label>
+            <select asp-for="chosenType"
+                    asp-items="@(new SelectList(Model.accountTypeOptions,"Type"))">
+                <option>Please select one</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Register" class="btn btn-default" />
+        </div>
+    </form>
+</div>

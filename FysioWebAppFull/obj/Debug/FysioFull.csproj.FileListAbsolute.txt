@@ -1,0 +1,1 @@
+D:\dev\ServerSideWebDevFysio\FysioWebAppFull\FysioWebAppFull\obj\Debug\FysioFull.csproj.CoreCompileInputs.cache

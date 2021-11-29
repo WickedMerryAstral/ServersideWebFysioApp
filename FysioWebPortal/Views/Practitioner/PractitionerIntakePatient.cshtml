@@ -1,0 +1,118 @@
+﻿@model FysioWebPortal.ViewModels.IntakeViewModel
+
+@{ 
+    ViewData["Title"] = "Intake Patient";
+}
+
+<div>
+    <h2>Details</h2>
+    <form asp-action="PractitionerIntakePatient">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="patient.name">Name</label>
+            <input class="form-control" asp-for="patient.name" />
+            <span asp-validation-for="patient.name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.email">Email</label>
+            <input class="form-control" asp-for="patient.email" />
+            <span asp-validation-for="patient.email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.phone">Phone</label>
+            <input class="form-control" asp-for="patient.phone" />
+            <span asp-validation-for="patient.phone" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.birthDate">Date of birth</label>
+            <input type="date" class="form-control" asp-for="patient.birthDate" />
+            <span asp-validation-for="patient.birthDate" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.sex">Sex</label>
+            <input class="form-control" asp-for="patient.sex" />
+            <span asp-validation-for="patient.sex" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Student or employee?</label>
+            <div class="col-md-5">
+                @Html.DropDownListFor(x => Model.selectedPatientType, new SelectList(Model.patientTypeItems, "Value", "Text"),
+               htmlAttributes: new { @class = "form-control", id = "patienttype" })
+                @Html.ValidationMessageFor(x => x.selectedPatientType, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="number">Student or employee number</label>
+            <input class="form-control" asp-for="number" />
+            <span asp-validation-for="number" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Intake done by</label>
+            <div class="col-md-5">
+                @Html.DropDownListFor(x => Model.selectedIntaker, new SelectList(Model.intakerItems, "Value", "Text"),
+               htmlAttributes: new { @class = "form-control", id = "intaker" })
+                @Html.ValidationMessageFor(x => x.selectedIntaker, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Supervised by</label>
+            <div class="col-md-5">
+                @Html.DropDownListFor(x => Model.selectedSupervisor, new SelectList(Model.supervisorItems, "Value", "Text"),
+               htmlAttributes: new { @class = "form-control", id = "supervisor" })
+                @Html.ValidationMessageFor(x => x.selectedSupervisor, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Head Practitioner</label>
+            <div class="col-md-5">
+                @Html.DropDownListFor(x => Model.selectedPractitioner, new SelectList(Model.practitionersItems, "Value", "Text"),
+               htmlAttributes: new { @class = "form-control", id = "practitioner" })
+                @Html.ValidationMessageFor(x => x.selectedPractitioner, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.patientFile.mainComplaint">Main complaint</label>
+            <input type="text" class="form-control" asp-for="patient.patientFile.mainComplaint" />
+            <span asp-validation-for="patient.patientFile.mainComplaint" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.patientFile.IntakeDate">Date of registry (will default to now, if left empty.)</label>
+            <input type="date" class="form-control" asp-for="patient.patientFile.IntakeDate" />
+            <span asp-validation-for="patient.patientFile.IntakeDate" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.patientFile.DischargeDate">Date of discharge</label>
+            <input type="date" class="form-control" asp-for="patient.patientFile.DischargeDate" />
+            <span asp-validation-for="patient.patientFile.DischargeDate" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.patientFile.treatmentPlan.weeklyAppointments">Weekly appointments</label>
+            <input class="form-control" asp-for="patient.patientFile.treatmentPlan.weeklyAppointments" />
+            <span asp-validation-for="patient.patientFile.treatmentPlan.weeklyAppointments" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="patient.patientFile.treatmentPlan.sessionDuration">Sessions duration (minutes)</label>
+            <input class="form-control" asp-for="patient.patientFile.treatmentPlan.sessionDuration" />
+            <span asp-validation-for="patient.patientFile.treatmentPlan.sessionDuration" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Register Patient" class="btn btn-default" />
+        </div>
+    </form>
+</div>

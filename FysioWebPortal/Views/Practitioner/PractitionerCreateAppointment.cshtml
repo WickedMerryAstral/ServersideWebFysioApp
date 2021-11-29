@@ -1,0 +1,52 @@
+﻿@model Core.Domain.Appointment
+
+@{
+    ViewData["Title"] = "PractitionerCreateAppointment";
+}
+
+<h1>Add an appointment</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="PractitionerCreateAppointment">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="details" class="control-label"></label>
+                <input asp-for="details" class="form-control" />
+                <span asp-validation-for="details" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="location" class="control-label"></label>
+                <input asp-for="location" class="form-control" />
+                <span asp-validation-for="location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="specialties" class="control-label"></label>
+                <input asp-for="specialties" class="form-control" />
+                <span asp-validation-for="specialties" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="startTime" class="control-label"></label>
+                <input asp-for="startTime" class="form-control" />
+                <span asp-validation-for="startTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="endTime" class="control-label"></label>
+                <input asp-for="endTime" class="form-control" />
+                <span asp-validation-for="endTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <button class="btn" onclick="location.href = '@Url.Action("PractitionerPatientFile", "Practitioner", Model.patient)'">Cancel</button>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

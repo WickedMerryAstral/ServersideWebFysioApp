@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.EF.Fysio", "Infrastructure.EF.Fysio\Infrastructure.EF.Fysio.csproj", "{8DC255D0-DE23-4649-87AE-FFAF85BF2EC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FysioWebPortal", "FysioWebPortal\FysioWebPortal.csproj", "{328FBAA3-C389-41C8-B2DE-34163F9874D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VektisCodesServer", "..\..\ServerSideWebDevFysioServer\VektisCodesServer\VektisCodesServer\VektisCodesServer.csproj", "{A3219A49-20CF-4EF0-8613-D579FF731595}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain", "Core.Domain\Core.Domain.csproj", "{39F6DC9B-20E6-4051-82FA-02A6F2CB7A0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.API.Fysio", "Infrastructure.API.Fysio\Infrastructure.API.Fysio.csproj", "{1C967066-5719-4282-BADF-59859BBEF89F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.DomainServices", "Core.DomainServices\Core.DomainServices.csproj", "{0ABFDFC3-688B-4633-9490-6E35503EAE5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DC255D0-DE23-4649-87AE-FFAF85BF2EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC255D0-DE23-4649-87AE-FFAF85BF2EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC255D0-DE23-4649-87AE-FFAF85BF2EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC255D0-DE23-4649-87AE-FFAF85BF2EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328FBAA3-C389-41C8-B2DE-34163F9874D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328FBAA3-C389-41C8-B2DE-34163F9874D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328FBAA3-C389-41C8-B2DE-34163F9874D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328FBAA3-C389-41C8-B2DE-34163F9874D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3219A49-20CF-4EF0-8613-D579FF731595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3219A49-20CF-4EF0-8613-D579FF731595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3219A49-20CF-4EF0-8613-D579FF731595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3219A49-20CF-4EF0-8613-D579FF731595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39F6DC9B-20E6-4051-82FA-02A6F2CB7A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F6DC9B-20E6-4051-82FA-02A6F2CB7A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F6DC9B-20E6-4051-82FA-02A6F2CB7A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F6DC9B-20E6-4051-82FA-02A6F2CB7A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C967066-5719-4282-BADF-59859BBEF89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C967066-5719-4282-BADF-59859BBEF89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C967066-5719-4282-BADF-59859BBEF89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C967066-5719-4282-BADF-59859BBEF89F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ABFDFC3-688B-4633-9490-6E35503EAE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ABFDFC3-688B-4633-9490-6E35503EAE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ABFDFC3-688B-4633-9490-6E35503EAE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ABFDFC3-688B-4633-9490-6E35503EAE5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06D3D3F6-5B2B-4365-93A1-601E2D9FC78F}
+	EndGlobalSection
+EndGlobal
